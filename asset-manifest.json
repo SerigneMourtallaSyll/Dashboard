@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Dashboard/static/css/main.e8a0a821.css",
+    "main.js": "/Dashboard/static/js/main.f5987cd2.js",
+    "static/js/787.9fe454fe.chunk.js": "/Dashboard/static/js/787.9fe454fe.chunk.js",
+    "static/media/Ellipse 82.png": "/Dashboard/static/media/Ellipse 82.2f7c994736c27fda20ea.png",
+    "index.html": "/Dashboard/index.html",
+    "main.e8a0a821.css.map": "/Dashboard/static/css/main.e8a0a821.css.map",
+    "main.f5987cd2.js.map": "/Dashboard/static/js/main.f5987cd2.js.map",
+    "787.9fe454fe.chunk.js.map": "/Dashboard/static/js/787.9fe454fe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8a0a821.css",
+    "static/js/main.f5987cd2.js"
+  ]
+}
