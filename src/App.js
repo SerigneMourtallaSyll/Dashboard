@@ -9,7 +9,7 @@ import Template from './layouts/Template';
 import Nav from './Components/Nav';
 
 function App() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const Toggle = () => {
     setToggle(!toggle)
   }
