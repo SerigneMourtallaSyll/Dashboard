@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/js/dist/collapse';
+// import { Dropdown } from 'bootstrap';
 import imageProfil from '../assets/Ellipse 82.png';
 
 

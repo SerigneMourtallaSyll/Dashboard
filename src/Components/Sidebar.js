@@ -1,5 +1,7 @@
 import React from 'react';
 import SidebarComponent from './SidebarComponent';
+import { menu } from './Utils';
+
 
 function Sidebar() {
   return (
@@ -10,12 +12,9 @@ function Sidebar() {
         </div>
         <hr className='text-dark'/>
         <div className="list-group list-group-flush">
-            <SidebarComponent title={"Dashbord"} icon={"bi bi-speedometer2 fs-5 me-3"} />
-            <SidebarComponent title={"Home"} icon={"bi bi-house fs-5 me-3"} />
-            <SidebarComponent title={"Products"} icon={"bi bi-table fs-5 me-3"} />
-            <SidebarComponent title={"Report"} icon={"bi bi-clipboard-data fs-5 me-3"} />
-            <SidebarComponent title={"Customers"} icon={"bi bi-people fs-5 me-3"} />
-            <SidebarComponent title={"Logout"} icon={"bi bi-power fs-5 me-3"} />
+          {menu.map((elem, index) => (
+            <SidebarComponent {...elem} key={index}/>
+          ))}
         </div>
     </div>
   )

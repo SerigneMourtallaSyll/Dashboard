@@ -1,27 +1,27 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from './Components/Sidebar';
-import Home from './Components/Home';
-import { useState } from 'react';
+import Home from './Pages/Home';
 
+import { useState } from 'react';
+// import About from './Components/About';
+import Template from './layouts/Template';
+import Nav from './Components/Nav';
 
 function App() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   const Toggle = () => {
     setToggle(!toggle)
   }
   return (
-    <div className="container-fluid nin-vh-100">
-      <div className='row'>
-        {toggle && <div className='col-4 col-md-2 bg-white vh-100 position-fixed m-0 p-0'>
-          <Sidebar />      
-        </div>}
-        {toggle && <div className='col-4 col-md-2'></div>}
-        <div className='col p-0 m-0'>
-          <Home Toggle={Toggle}/>
-        </div>
-      </div>
-    </div>
+    <Template
+      sidebar={<Sidebar />} 
+      navbar={<Nav Toggle={Toggle}/>}
+      toggle={toggle} 
+      sidebarBg={"#282c34"}
+    >
+      <Home />
+    </Template>
   );
 }
 
